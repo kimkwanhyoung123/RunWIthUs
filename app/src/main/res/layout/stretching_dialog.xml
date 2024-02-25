@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- custom_dialog.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/event_dialog_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+
+            app:autoPlay="true"
+            app:videoId="pv4oGyKmRd0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="즐거운 러닝을 위한"
+            android:layout_gravity="center"
+            android:textSize="22dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동적 스트레칭"
+            android:layout_gravity="center"
+            android:textSize="22dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="발걸음과 호흡에 집중하는 행복한 러닝을 위한 준비!"
+            android:layout_gravity="center"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="동적 스트레칭은 러너의 체온을 상승시키고,"
+            android:layout_gravity="center"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="관절과 유연성을 증가 시켜줄 수 있는"
+            android:layout_gravity="center"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="러닝 전 스트레칭 입니다."
+            android:layout_gravity="center"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnClose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/default_profile"
+            app:cardCornerRadius="20dp" >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/close_icon" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

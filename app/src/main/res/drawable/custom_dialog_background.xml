@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <corners android:radius="20dp" /> <!-- 모서리 반경을 조절하여 모서리 반경을 변경합니다 -->
+        <solid android:color="#8BE3B8" /> <!-- 대화 상자의 배경 색상을 설정합니다 -->
+    </shape>

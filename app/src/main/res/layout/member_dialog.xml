@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/event_dialog_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/memberImageDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/greybackground" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/memberNameDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="멤버 이름"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/memberGradeDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="현재 멤버 등급"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/changeGradeButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="등급 변경" />
+
+    <Button
+        android:id="@+id/cancelMemberDialogButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="취소" />
+</LinearLayout>

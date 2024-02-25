@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUp2Fragment">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/nanum2"
+        android:text="나의 정보 입력"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.126" />
+
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/nanum1"
+        android:hint="키를 입력해주세요"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum2"
+        android:text="키 (cm)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum2"
+        android:text="몸무게 (kg)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heightInput" />
+
+    <EditText
+        android:id="@+id/weightInput"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/nanum1"
+        android:hint="몸무게를 입력해주세요"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum2"
+        android:text="희망 러닝 레벨"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weightInput" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum2"
+        android:text="희망 러닝 주기"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelInput" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nanum2"
+        android:text="희망 러닝 장소"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycleInput" />
+
+    <EditText
+        android:id="@+id/levelInput"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/nanum1"
+        android:hint="런닝 레벨 선택"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/cycleInput"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/nanum1"
+        android:hint="런닝 주기 선택"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <EditText
+        android:id="@+id/cityInput"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/nanum1"
+        android:hint="주소를 입력해주세요 ( 시 )"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/guInput"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="@font/nanum1"
+        android:hint="주소를 입력해주세요 ( 구 )"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cityInput"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Button
+        android:id="@+id/signUpCompleteButton"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/nanum2"
+        android:text="완료"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/gobackStartButton"
+        android:layout_width="38dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPasswordMatch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/nanum1"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/signUpCompleteButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

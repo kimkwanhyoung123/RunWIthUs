@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp1Fragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/gobackStartButton"
+        android:layout_width="38dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextSignUpButton"
+        android:layout_width="340dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="96dp"
+        android:text="계속"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/nanum2"
+        android:text="Sign up"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <EditText
+        android:id="@+id/signupId"
+        android:layout_width="343dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/nanum4"
+        android:hint="이메일"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/signupPassword"
+        android:layout_width="343dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/nanum4"
+        android:hint="비밀번호 (8자 이상)"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupId" />
+
+    <EditText
+        android:id="@+id/passwordConfirm"
+        android:layout_width="343dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/nanum4"
+        android:hint="비밀번호 재입력"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupPassword" />
+
+    <EditText
+        android:id="@+id/signupNickname"
+        android:layout_width="343dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/nanum4"
+        android:hint="닉네임"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordConfirm" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupNickname">
+
+        <!-- 남성 라디오 버튼 -->
+        <RadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorAccent"
+            android:text="남성" />
+
+        <!-- 여성 라디오 버튼 -->
+        <RadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:buttonTint="@color/colorAccent"
+            android:text="여성" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/signupBirthday"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rounded_edittext"
+        android:elevation="5dp"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/nanum4"
+        android:hint="생년월일"
+        android:inputType="none"
+        android:paddingLeft="20dp"
+        android:paddingBottom="0dp"
+        android:textColor="#808080"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.219"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupNickname" />
+
+    <ImageView
+        android:id="@+id/btnDatePicker"
+        android:layout_width="60dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/signupBirthday"
+        app:layout_constraintTop_toBottomOf="@+id/signupNickname"
+        app:srcCompat="@drawable/signcalendar" />
+
+    <TextView
+        android:id="@+id/textViewPasswordMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nanum1"
+        android:text="TextView"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordConfirm" />
+
+    <TextView
+        android:id="@+id/textViewPasswordMatch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanum1"
+        android:text="TextView"
+        android:textSize="13sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/nextSignUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupBirthday"
+        app:layout_constraintVertical_bias="0.767" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

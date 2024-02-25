@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "551514061859",
+    "project_id": "fair-kingdom-401602",
+    "storage_bucket": "fair-kingdom-401602.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551514061859:android:f75e79c0ff5f29bc0a0596",
+        "android_client_info": {
+          "package_name": "com.lx.runwithus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6D_70mp67kbZndAtktdOm2S-yezVV0zQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551514061859:android:deb33e08834672ca0a0596",
+        "android_client_info": {
+          "package_name": "com.lx.push"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6D_70mp67kbZndAtktdOm2S-yezVV0zQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
